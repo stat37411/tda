@@ -57,7 +57,7 @@ bool merge(
 
 /*
 create dendrogram on n points
-edges consist of tuple (source, target, weight)
+edges consist of tuple (source, target)
 we'll assume edges are sorted in some order
 
 output is dendrogram: data is
