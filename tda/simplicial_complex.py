@@ -23,7 +23,7 @@ class SimplicialComplex():
         """
         for f in boundary(s):
             # iterate over faces to make sure they are added
-            if not t.contains(f):
+            if not self.trie.contains(f):
                 self.add(f)
         self.trie.add(s)
 
