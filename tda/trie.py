@@ -1,6 +1,6 @@
 class Trie():
     """
-    Trie class for lists/tuples
+    Trie class for lists/tuples, or any ordered data type (can slice)
     """
 
     def __init__(self):
