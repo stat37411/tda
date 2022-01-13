@@ -14,3 +14,15 @@ To use with a jupyter notebook, you should
 ```
 conda install ipykernel
 ```
+
+## Running C++ code
+
+First, make sure you have `gcc` installed (including `g++`) in order to compile C++.
+
+Headers are in the `include/` folder.  The folder `demo/` contains `.cpp` files, which can be compiled
+using the `Makefile`.  Open a terminal
+```
+$ cd demo
+$ make # compiles union_find.out
+$ ./union_find.out # runs the executable
+```

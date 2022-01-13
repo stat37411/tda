@@ -1,8 +1,8 @@
-CXXFLAGS = -Wall -std=c++17 -Wextra
+CXXFLAGS = -Wall -std=c++17 -Wextra -march=native
 OUTFLAGS = -O3 -fopenmp
 PROFFLAGS = -pg -O3
 DBFLAGS = -g -Og
-CXX = g++
+CXX ?= g++
 IFLAGS = -I../include
 
 default: union_find.out

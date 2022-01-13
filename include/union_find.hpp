@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cstddef> // size_t
 #include <tuple>
 #include <vector>
 #include <numeric> // iota
