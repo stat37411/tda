@@ -28,11 +28,19 @@ class SimplicialComplex():
         self.trie.add(s)
 
 
-    def simplices(self):
+    def simplices(self, k=None):
         """
-        return all simplices
+        return simplices
+        k (optional): dimension of simplices
+
+        if k is None, returns all simplices
+        otherwise, returns simplices of dimension k
         """
-        return self.trie.nodes()
+        spxs = self.trie.nodes()
+        if k is None:
+            return spxs
+        else:
+            return [s for s in spxs if len(s) == k+1]
 
 
     def skeleton(self, k):
