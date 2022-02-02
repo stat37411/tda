@@ -74,16 +74,6 @@ class filtered_f2chain_complex(f2chain_complex):
         self.bdry[i] = data[0]
         self.vals[i] = data[1]
 
-    # def maxdim(self):
-    #     return len(self.bdry) - 1
-    #
-    # def reduce(self):
-    #     """
-    #     Perform reduction algorithm on each boundary matrix in chain complex
-    #     """
-    #     for B in self.bdry:
-    #         reduce(B)
-
 
     def barcode(self, k):
         """
